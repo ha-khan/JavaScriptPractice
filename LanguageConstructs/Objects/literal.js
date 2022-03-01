@@ -1,9 +1,9 @@
 // Objects are the building blocks of more complex datatypes in javascript
 // somewhat similar to go structs or dictionaries, or some instance obj of a class obj
 
-// Literal definition of an object, somewaht similar to def an anonymous struct in go
+// Literal definition of an object, somewhat similar to def an anonymous struct in go
 let node = {
-    // key-value
+    // key-value, aka property, attribute, .. etc
     "value": 123,
 
     // quotes are optional
