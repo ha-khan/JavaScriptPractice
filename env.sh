@@ -1,2 +1,2 @@
 #!/usr/bin/bash
-alias ts='./node_modules/typescript/bin/tsc'
+alias tsc='./node_modules/typescript/bin/tsc'

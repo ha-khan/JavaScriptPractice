@@ -9,7 +9,7 @@ let node = {
     // quotes are optional
     right : function() {
 
-        // this is a pointer receiver / pointer to the object instance 
+        // this is an implicit pointer receiver to the object instance 
         // being ref 
         console.log(this.value)
     } 
@@ -19,4 +19,3 @@ let node = {
 // extracting the value for the key "right" with is a function obj
 // function object is then invoked/called
 node["right"]()
-

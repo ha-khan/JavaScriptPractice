@@ -1,5 +1,7 @@
 # JavaScriptPractice
 
+Notes around the JavaScript ecosystem (server-side, client-side) with other technologies that are closely related (HTML, CSS, TypeScript, WASM, .. etc).
+
 ## Tooling
 1. nvm 
 2. node

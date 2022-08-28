@@ -46,6 +46,3 @@ l = populateFromArr([123, 456, 789]);
 console.log(l.value);
 console.log(l.next.value);
 console.log(l.next.next.value);
-
-
-

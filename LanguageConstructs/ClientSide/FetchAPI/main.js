@@ -1,0 +1,3 @@
+// 
+
+fetch('https://google.com').then(console.log('recv'))
