@@ -1,13 +1,35 @@
+
 function fibonacci(n: number): number {
-    if (n == 0) {
-        return 0;
+    let cache: Map<number, number> = new Map();
+
+    function helper(n: number): number {
+        if (n == 0) {
+            return 0;
+        }
+
+        if (n == 1) {
+            return 1;
+        }
+
+        let left: number = 0;
+        if (cache.has(n-1)) {
+            left = cache.get(n-1);
+        } else {
+            left = helper(n - 1);
+            cache.set(n-1, left); 
+        }
+
+        
+        let right: number = 0;
+        if (cache.has(n - 2)) {
+            right = cache.get(n-2);
+        } else {
+            right = helper(n-2);
+            cache.set(n-2, right);
+        }
+
+        return left + right;
     }
 
-    if (n == 1) {
-        return 1;
-    }
-    return fibonacci(n - 1) + fibonacci (n - 2);
+    return helper(n)
 }
-
-
-console.log(fibonacci(11));
